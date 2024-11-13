@@ -4,3 +4,43 @@
 @include font-face('Montserrat', Montserrat-Medium, 500);
 @include font-face('Montserrat', Montserrat-SemiBold, 600);
 @include font-face('Montserrat', Montserrat-Bold, 700);
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 39px;
+    padding-bottom: 29px;
+    background-color: #F5F5F5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.header {
+    .container {
+        padding: 5px 10.5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        padding-right: 9px;
+
+        &-link {
+            font-size: 13px;
+            letter-spacing: 0.2px;
+            color: #232527;
+            text-decoration: none;
+        }
+    }
+}

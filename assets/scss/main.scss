@@ -23,6 +23,11 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+    background-color: transparent;
+}
+
 .container {
     max-width: 360px;
     margin: 0 auto;
@@ -52,6 +57,8 @@ ul {
 }
 
 .services {
+    margin-bottom: 9px;
+
     &__list {
         margin-top: 14px;
         margin-bottom: 11px;
@@ -95,5 +102,133 @@ ul {
             font-weight: 500;
             color: white;
         }
+    }
+}
+
+.promo {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__wrap {
+        position: relative;
+    }
+
+    &__image {
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        bottom: 33px;
+    }
+
+    &__text {
+        margin-bottom: 9px;
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1;
+        color: #E3272D;
+        text-align: center;
+    }
+
+    &__subtext {
+        margin-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.1;
+        color: #004D68;
+        text-align: center;
+    }
+}
+
+.button__sign-up {
+    padding: 14px 56px;
+    background-color: #FF4B50;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+.pulse {
+    &-circle {
+        width: 25px;
+        height: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 37px;
+        left: 117px;
+        border-radius: 50%;
+        background-color: #C31230;
+        font-weight: 600;
+        color: white;
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #C31230;
+            animation: pulse 1.5s infinite ease-out;
+        }
+
+        &::after {
+            animation-delay: 0.75s;
+        }
+
+        &.circle {
+            &-empty {
+                width: 30px;
+                height: 30px;
+                top: 127px;
+                left: 230px;
+                background-color: rgba(234, 0, 0, 0.6);
+
+                &::before,
+                &::after {
+                    background-color: rgba(234, 0, 0, 0.6);
+                }
+            }
+
+            &-blur {
+                top: 240px;
+                left: 135px;
+                background-color: #E10000;
+
+                &::before,
+                &::after {
+                    background-color: #C31230;
+                    filter: blur(0.4px);
+                }
+            }
+        }
+    }
+
+    &-text {
+        z-index: 1;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
     }
 }

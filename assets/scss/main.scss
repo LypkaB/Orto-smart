@@ -12,6 +12,7 @@
 body {
     padding-top: 39px;
     padding-bottom: 29px;
+    background-color: #F5F5F5;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
@@ -152,6 +153,8 @@ button {
 }
 
 .video {
+    margin-bottom: 362px;
+
     .container {
         padding-left: 20px;
         padding-right: 20px;
@@ -164,6 +167,105 @@ button {
         color: #555;
         line-height: 1.2;
         text-align: center;
+    }
+}
+
+.reasons {
+    .container {
+        padding-left: 16px;
+        position: relative;
+    }
+
+    &__title {
+        display: inline-block;
+        font-size: 26px;
+        font-weight: 600;
+        color: #555;
+        margin-bottom: 22px;
+    }
+
+    &__carousel {
+        margin-bottom: 62px;
+    }
+
+    .swiper {
+        &-slide {
+            width: 232px;
+            padding-bottom: 36px;
+            background-color: white;
+            border-radius: 12px;
+            //box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+            &__image {
+                margin-bottom: 42px;
+
+                img {
+                    border-radius: 8px;
+                }
+            }
+
+            &__list {
+                padding-left: 24px;
+            }
+
+            &__item {
+                position: relative;
+
+                + li {
+                    margin-top: 3px;
+                }
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -15px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    width: 4px;
+                    height: 4px;
+                    background-color: black;
+                    border-radius: 50%;
+                }
+            }
+        }
+
+        &-button {
+            &-prev,
+            &-next {
+                width: 33px;
+                height: 33px;
+                top: 18px;
+                border: 1px solid darken(#DDE3E9, 20%);
+                border-radius: 11px;
+                z-index: 2;
+
+                &::after {
+                    font-size: 14px;
+                    color: #242526;
+                }
+            }
+
+            &-prev {
+                left: 69%;
+            }
+
+            &-next {
+                right: 35px;
+            }
+
+            &-disabled {
+                color: #DDE3E9;
+            }
+        }
+    }
+
+    &__btn {
+        padding-left: 34px;
+        padding-right: 34px;
+
+        .button__sign-up {
+            padding: 4px 34px;
+        }
     }
 }
 

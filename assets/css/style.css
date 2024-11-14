@@ -44,7 +44,6 @@
 body {
   padding-top: 39px;
   padding-bottom: 29px;
-  background-color: #F5F5F5;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
 }
@@ -227,6 +226,10 @@ button {
   text-align: center;
 }
 
+.reasons {
+  margin-bottom: 64px;
+}
+
 .reasons .container {
   padding-left: 16px;
   position: relative;
@@ -320,6 +323,51 @@ button {
 
 .reasons__btn .button__sign-up {
   padding: 4px 34px;
+}
+
+.benefits .container {
+  padding-top: 62px;
+  padding-bottom: 58px;
+  background-color: #EDF8FF;
+}
+
+.benefits__title {
+  display: block;
+  font-size: 26px;
+  font-weight: 700;
+  color: #555;
+  text-align: center;
+  letter-spacing: 0.7px;
+  margin-bottom: 47px;
+}
+
+.benefits__wrap {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.benefits__item + div {
+  margin-top: 46px;
+}
+
+.benefits__item-icon {
+  margin-bottom: 18px;
+}
+
+.benefits__item-text {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #555;
+}
+
+.benefits__description {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #242526;
+  text-align: center;
 }
 
 .button__sign-up {

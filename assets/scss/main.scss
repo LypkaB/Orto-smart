@@ -12,7 +12,6 @@
 body {
     padding-top: 39px;
     padding-bottom: 29px;
-    background-color: #F5F5F5;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
 }
@@ -106,6 +105,8 @@ button {
 }
 
 .promo {
+    margin-bottom: 45px;
+
     .container {
         padding-left: 10px;
         padding-right: 10px;
@@ -146,6 +147,22 @@ button {
         font-weight: 500;
         line-height: 1.1;
         color: #004D68;
+        text-align: center;
+    }
+}
+
+.video {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    &__title {
+        font-size: 26px;
+        font-weight: 600;
+        color: #555;
+        line-height: 1.2;
         text-align: center;
     }
 }

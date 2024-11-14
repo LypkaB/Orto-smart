@@ -17,6 +17,12 @@ body {
     font-weight: 400;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
 .container {
     max-width: 360px;
     margin: 0 auto;
@@ -41,6 +47,53 @@ body {
             letter-spacing: 0.2px;
             color: #232527;
             text-decoration: none;
+        }
+    }
+}
+
+.services {
+    &__list {
+        margin-top: 14px;
+        margin-bottom: 11px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 34px;
+        padding-right: 34px;
+    }
+
+    &__item {
+        font-size: 14px;
+        font-weight: 500;
+        color: #555;
+
+        + li {
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: -24px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 4px;
+                height: 4px;
+                background-color: #555;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    &__description {
+        padding-top: 2px;
+        padding-bottom: 6px;
+        background-color: #909090;
+        text-align: center;
+
+        &-text {
+            font-size: 10px;
+            font-weight: 500;
+            color: white;
         }
     }
 }

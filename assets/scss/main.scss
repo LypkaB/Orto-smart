@@ -173,12 +173,13 @@ button {
     margin-bottom: 64px;
 
     .container {
-        padding-left: 16px;
+        //padding-left: 16px;
         position: relative;
     }
 
     &__title {
         display: inline-block;
+        margin-left: 20px;
         font-size: 26px;
         font-weight: 600;
         color: #555;
@@ -186,7 +187,9 @@ button {
     }
 
     &__carousel {
-        margin-bottom: 62px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 62px;
     }
 
     .swiper {
@@ -195,7 +198,7 @@ button {
             padding-bottom: 36px;
             background-color: white;
             border-radius: 12px;
-            //box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2.92px 29.17px 0 rgba(48, 48, 48, 0.15);
 
             &__image {
                 margin-bottom: 42px;
@@ -263,6 +266,7 @@ button {
     &__btn {
         padding-left: 34px;
         padding-right: 34px;
+        text-align: center;
 
         .button__sign-up {
             padding: 4px 34px;
@@ -322,6 +326,8 @@ button {
 }
 
 .recommendations {
+    margin-bottom: 64px;
+
     &__title {
         display: block;
         padding-left: 60px;
@@ -351,6 +357,63 @@ button {
     &__text {
         font-weight: 600;
         color: #555;
+    }
+}
+
+.steps {
+    .container {
+        padding-top: 45px;
+        padding-bottom: 45px;
+        background-color: #EDF8FF;
+    }
+
+    &__title {
+        display: block;
+        font-size: 20px;
+        font-weight: 500;
+        color: #555;
+        line-height: 1.1;
+        letter-spacing: -0.8px;
+        text-align: center;
+        margin-bottom: 34px;
+    }
+
+    &__wrap {
+        padding-left: 44px;
+        padding-right: 44px;
+    }
+
+    &__item {
+        padding-bottom: 15px;
+        background-color: white;
+        border-radius: 12px;
+        text-align: center;
+
+        + div {
+            margin-top: 47px;
+        }
+    }
+
+    &__img {
+        margin-bottom: 8px;
+    }
+
+    &__count,
+    &__text {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        color: #555;
+    }
+
+    &__count {
+        margin-bottom: 6px;
+    }
+
+    &__text {
+        padding-left: 40px;
+        padding-right: 40px;
+        font-weight: 600;
     }
 }
 

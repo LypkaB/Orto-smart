@@ -231,12 +231,12 @@ button {
 }
 
 .reasons .container {
-  padding-left: 16px;
   position: relative;
 }
 
 .reasons__title {
   display: inline-block;
+  margin-left: 20px;
   font-size: 26px;
   font-weight: 600;
   color: #555;
@@ -244,7 +244,9 @@ button {
 }
 
 .reasons__carousel {
-  margin-bottom: 62px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 62px;
 }
 
 .reasons .swiper-slide {
@@ -252,6 +254,8 @@ button {
   padding-bottom: 36px;
   background-color: white;
   border-radius: 12px;
+  -webkit-box-shadow: 0 2.92px 29.17px 0 rgba(48, 48, 48, 0.15);
+  box-shadow: 0 2.92px 29.17px 0 rgba(48, 48, 48, 0.15);
 }
 
 .reasons .swiper-slide__image {
@@ -319,6 +323,7 @@ button {
 .reasons__btn {
   padding-left: 34px;
   padding-right: 34px;
+  text-align: center;
 }
 
 .reasons__btn .button__sign-up {
@@ -374,6 +379,10 @@ button {
   text-align: center;
 }
 
+.recommendations {
+  margin-bottom: 64px;
+}
+
 .recommendations__title {
   display: block;
   padding-left: 60px;
@@ -409,6 +418,61 @@ button {
 .recommendations__text {
   font-weight: 600;
   color: #555;
+}
+
+.steps .container {
+  padding-top: 45px;
+  padding-bottom: 45px;
+  background-color: #EDF8FF;
+}
+
+.steps__title {
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.steps__wrap {
+  padding-left: 44px;
+  padding-right: 44px;
+}
+
+.steps__item {
+  padding-bottom: 15px;
+  background-color: white;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.steps__item + div {
+  margin-top: 47px;
+}
+
+.steps__img {
+  margin-bottom: 8px;
+}
+
+.steps__count,
+.steps__text {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+}
+
+.steps__count {
+  margin-bottom: 6px;
+}
+
+.steps__text {
+  padding-left: 40px;
+  padding-right: 40px;
+  font-weight: 600;
 }
 
 .button__sign-up {

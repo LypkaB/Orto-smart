@@ -205,22 +205,21 @@ button {
   text-align: center;
 }
 
-.video {
-  margin-bottom: 362px;
-}
-
 .video .container {
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 80px;
   text-align: center;
 }
 
 .video__title {
+  display: block;
   font-size: 26px;
   font-weight: 600;
   color: #555;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .reasons .container {

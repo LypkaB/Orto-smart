@@ -97,8 +97,8 @@ button {
   text-decoration: none;
 }
 
-.services {
-  margin-bottom: 9px;
+.services .container {
+  padding-bottom: 9px;
 }
 
 .services__list {
@@ -154,13 +154,10 @@ button {
   color: white;
 }
 
-.promo {
-  margin-bottom: 45px;
-}
-
 .promo .container {
   padding-left: 10px;
   padding-right: 10px;
+  padding-bottom: 45px;
 }
 
 .promo__wrap {
@@ -226,11 +223,8 @@ button {
   text-align: center;
 }
 
-.reasons {
-  margin-bottom: 64px;
-}
-
 .reasons .container {
+  padding-bottom: 64px;
   position: relative;
 }
 

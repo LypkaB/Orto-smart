@@ -56,7 +56,9 @@ button {
 }
 
 .services {
-    margin-bottom: 9px;
+    .container {
+        padding-bottom: 9px;
+    }
 
     &__list {
         margin-top: 14px;
@@ -105,11 +107,10 @@ button {
 }
 
 .promo {
-    margin-bottom: 45px;
-
     .container {
         padding-left: 10px;
         padding-right: 10px;
+        padding-bottom: 45px;
     }
 
     &__wrap {
@@ -170,10 +171,8 @@ button {
 }
 
 .reasons {
-    margin-bottom: 64px;
-
     .container {
-        //padding-left: 16px;
+        padding-bottom: 64px;
         position: relative;
     }
 

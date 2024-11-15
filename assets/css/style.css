@@ -42,7 +42,7 @@
 }
 
 body {
-  padding-top: 39px;
+  padding-top: 10px;
   padding-bottom: 29px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
@@ -325,6 +325,10 @@ button {
   padding: 4px 34px;
 }
 
+.benefits {
+  margin-bottom: 60px;
+}
+
 .benefits .container {
   padding-top: 62px;
   padding-bottom: 58px;
@@ -368,6 +372,43 @@ button {
   padding-right: 20px;
   color: #242526;
   text-align: center;
+}
+
+.recommendations__title {
+  display: block;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #555;
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.recommendations__wrap {
+  padding-left: 44px;
+  padding-right: 34px;
+}
+
+.recommendations__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.recommendations__item + div {
+  margin-top: 20px;
+}
+
+.recommendations__text {
+  font-weight: 600;
+  color: #555;
 }
 
 .button__sign-up {

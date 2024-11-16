@@ -410,6 +410,8 @@ button {
 }
 
 .goods {
+    margin-bottom: 14px;
+
     &__carousel {
         padding-left: 12px;
         padding-right: 12px;
@@ -478,6 +480,55 @@ button {
 
     &__img {
         text-align: center;
+    }
+}
+
+.info {
+    &__text {
+        margin-top: -86px;
+        margin-left: 8px;
+        margin-right: 17px;
+        padding: 24px 22px 26px 20px;
+        background-color: blue;
+        border-radius: 8px;
+        position: relative;
+        color: white;
+
+        span {
+            display: block;
+        }
+
+        &::after {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -23px;
+            left: 9px;
+            background: url("/assets/images/bg-1.png") no-repeat center/contain;
+        }
+
+        &-top {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            margin-bottom: 15px;
+        }
+
+        &-mid {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 1.3;
+            letter-spacing: -0.1px;
+            margin-bottom: 16px;
+        }
+
+        &-bottom {
+            font-size: 10px;
+            font-weight: 500;
+            font-style: italic;
+            text-align: right;
+        }
     }
 }
 

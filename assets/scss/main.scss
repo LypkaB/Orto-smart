@@ -262,16 +262,6 @@ button {
             }
         }
     }
-
-    &__btn {
-        padding-left: 34px;
-        padding-right: 34px;
-        text-align: center;
-
-        .button__sign-up {
-            padding: 4px 34px;
-        }
-    }
 }
 
 .benefits {
@@ -361,6 +351,8 @@ button {
 }
 
 .steps {
+    margin-bottom: 46px;
+
     .container {
         padding-top: 45px;
         padding-bottom: 45px;
@@ -417,13 +409,97 @@ button {
     }
 }
 
-.button__sign-up {
-    padding: 14px 56px;
-    background-color: #FF4B50;
-    border-radius: 8px;
-    font-size: 20px;
-    font-weight: 600;
-    color: white;
+.goods {
+    &__carousel {
+        padding-left: 12px;
+        padding-right: 12px;
+        margin-bottom: 12px;
+    }
+
+    .swiper {
+        &-slide {
+            width: 320px;
+            height: 558px;
+            padding-top: 24px;
+            padding-bottom: 30px;
+            border-radius: 12px;
+
+            &.bg {
+                &_blue {
+                    &-light {
+                        background-color: #EDF8FF;
+                    }
+
+                    &-sky {
+                        background-color: #C8E9FF;
+                    }
+
+                    &-soft {
+                        background-color: #ACDEFF;
+                    }
+                }
+            }
+        }
+
+        &-pagination {
+            bottom: 20px;
+
+            &-bullet {
+                width: 12px;
+                height: 12px;
+
+                &-active {
+                    background-color: #14ADD7;
+                }
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 18px;
+        text-align: center;
+    }
+
+    &__text {
+        display: block;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 15px;
+        font-weight: 500;
+        color: #555;
+        line-height: 1;
+        text-align: center;
+        margin-bottom: 19px;
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    &__img {
+        text-align: center;
+    }
+}
+
+.button {
+    &__wrap {
+        padding-left: 34px;
+        padding-right: 34px;
+        text-align: center;
+
+        .button__sign-up {
+            padding: 4px 34px;
+        }
+    }
+
+    &__sign-up {
+        padding: 14px 56px;
+        background-color: #FF4B50;
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        color: white;
+    }
 }
 
 .pulse {

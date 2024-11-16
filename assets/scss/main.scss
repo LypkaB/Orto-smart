@@ -532,6 +532,38 @@ button {
     }
 }
 
+.footer {
+    .container {
+        > * {
+            display: block;
+            text-align: center;
+        }
+    }
+
+    &__description {
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(205, 202, 202, 0.3);
+        line-height: 1;
+        margin-bottom: 24px;
+    }
+
+    &__link,
+    &__rights {
+        font-size: 12px;
+        font-weight: 500;
+        color: #888;
+    }
+
+    &__link {
+        margin-bottom: 5px;
+
+        &.link-site {
+            text-decoration: none;
+        }
+    }
+}
+
 .button {
     &__wrap {
         padding-left: 34px;

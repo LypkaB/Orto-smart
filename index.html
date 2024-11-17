@@ -331,6 +331,35 @@
             </div>
         </div>
     </section>
+    <section class="consult-form">
+        <div class="container">
+            <span class="consult-form__title">Здорові ніжки – ваша найкраща інвестиція</span>
+
+            <form class="form__container">
+                <div class="form__select">
+                    <select class="form__select-city">
+                        <option value="" disabled selected>Оберіть місто</option>
+                        <option value="Київ">Київ</option>
+                        <option value="Дніпро">Дніпро</option>
+                        <option value="Вінниця">Вінниця</option>
+                        <option value="Одеса">Одеса</option>
+                    </select>
+                </div>
+
+                <div class="form__input">
+                    <input type="text" class="form__input-name" placeholder="Введіть Ваше ім’я">
+                </div>
+
+                <div class="form__input">
+                    <input type="text" class="form__input-phone" placeholder="Введіть номер телефону">
+                </div>
+
+                <button id="formConsultBtn" class="button__sign-up">
+                    ЗАПИСАТИСЯ ЗАРАЗ<br> <span>на безкоштовну діагностику</span>
+                </button>
+            </form>
+        </div>
+    </section>
     <footer class="footer">
         <div class="container">
             <span class="footer__description">САМОЛІКУВАННЯ МОЖЕ БУТИ ШКІДЛИВИМ ДЛЯ ВАШОГО ЗДОРОВ'Я</span>
@@ -339,6 +368,23 @@
             <span class="footer__rights">Всі права захищено © 2024</span>
         </div>
     </footer>
+
+    <div class="modal__window hidden">
+        <div class="container">
+            <div class="modal__window-bg">
+                <div class="modal__close"></div>
+
+                <div class="modal__feedback"></div>
+                <div class="modal__thanks">
+                    <div class="modal__thanks-img">
+                        <img src="./assets/images/icon-check.svg" alt="Check">
+                    </div>
+
+                    <span class="modal__thanks-text">Запис підтверджено!<br> Ми зв’яжемося з вами найближчим часом.</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/main-script.js"></script>

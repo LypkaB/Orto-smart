@@ -530,6 +530,10 @@ button {
   text-align: center;
 }
 
+.info {
+  margin-bottom: 60px;
+}
+
 .info__text {
   margin-top: -86px;
   margin-left: 8px;
@@ -575,6 +579,120 @@ button {
   font-weight: 500;
   font-style: italic;
   text-align: right;
+}
+
+.consult-form {
+  margin-bottom: 32px;
+}
+
+.consult-form .container {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.consult-form__title {
+  display: block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF4B50;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.consult-form .form__container {
+  text-align: center;
+}
+
+.form__container .button__sign-up {
+  margin-top: 19px;
+  padding: 5px 15px;
+}
+
+.form__container .button__sign-up span {
+  font-size: 15px;
+}
+
+.form__select {
+  padding: 15px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  margin-bottom: 26px;
+  position: relative;
+}
+
+.form__select select {
+  width: 100%;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #888;
+  text-align: center;
+}
+
+.form__select select::-ms-expand {
+  display: none;
+}
+
+.form__select select.color_blue {
+  color: #004D68;
+}
+
+.form__select::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-top: -5px;
+  margin-left: -5px;
+  border-right: 2px solid #7B7B7B;
+  border-bottom: 2px solid #7B7B7B;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+.form__input {
+  padding: 15px;
+  border: 1px solid #888;
+  border-radius: 10px;
+  margin-bottom: 26px;
+}
+
+.form__input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #004D68;
+  text-align: center;
+}
+
+.form__input input::-webkit-input-placeholder {
+  color: #888;
+}
+
+.form__input input::-moz-placeholder {
+  color: #888;
+}
+
+.form__input input:-ms-input-placeholder {
+  color: #888;
+}
+
+.form__input input::-ms-input-placeholder {
+  color: #888;
+}
+
+.form__input input::placeholder {
+  color: #888;
 }
 
 .footer .container > * {
@@ -690,6 +808,107 @@ button {
 
 .pulse-text {
   z-index: 1;
+}
+
+.modal__window {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 11;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+
+.modal__window-bg {
+  width: 100%;
+  height: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-left: 45px;
+  padding-right: 45px;
+  border-radius: 10px;
+  background-color: white;
+  -webkit-box-shadow: 0 1px 3px 1px rgba(10, 36, 50, 0.12);
+  box-shadow: 0 1px 3px 1px rgba(10, 36, 50, 0.12);
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  position: relative;
+}
+
+.modal__window-bg::-webkit-scrollbar {
+  display: none;
+}
+
+.modal__close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 20px;
+  height: 20px;
+  max-height: 20px;
+}
+
+.modal__close::before,
+.modal__close::after {
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: rgb(117, 130, 149);
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.modal__close::before {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal__close::after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+  -ms-transform: translate(-50%, -50%) rotate(-45deg);
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.modal__thanks {
+  text-align: center;
+}
+
+.modal__thanks-img {
+  margin-bottom: 20px;
+}
+
+.modal__thanks-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #FF4B50;
+}
+
+.hidden {
+  display: none;
+}
+
+.overflow {
+  overflow: hidden;
 }
 
 @-webkit-keyframes pulse {

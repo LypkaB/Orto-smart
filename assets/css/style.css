@@ -539,24 +539,14 @@ button {
   margin-left: 8px;
   margin-right: 17px;
   padding: 24px 22px 26px 20px;
-  background-color: blue;
   border-radius: 8px;
+  background-image: url("/assets/images/bg-1.svg");
   position: relative;
   color: white;
 }
 
 .info__text span {
   display: block;
-}
-
-.info__text::after {
-  content: "";
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: -23px;
-  left: 9px;
-  background: url("/assets/images/bg-1.png") no-repeat center/contain;
 }
 
 .info__text-top {

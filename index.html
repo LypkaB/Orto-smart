@@ -63,7 +63,7 @@
                 <div class="promo__content">
                     <span class="promo__text">Біль у ногах? Ми знаємо,<br> як допомогти!</span>
                     <span class="promo__subtext">Записуйтесь на безкоштовну діагностику стопи</span>
-                    <button class="button__sign-up">ЗАПИСАТИСЯ</button>
+                    <button class="button__sign-up btn-modal">ЗАПИСАТИСЯ</button>
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
             <div class="swiper-button-prev"></div>
 
             <div class="button__wrap">
-                <button class="button__sign-up">ЗАПИСАТИСЯ<br> НА ДІАГНОСТИКУ</button>
+                <button class="button__sign-up btn-modal">ЗАПИСАТИСЯ<br> НА ДІАГНОСТИКУ</button>
             </div>
         </div>
     </section>
@@ -310,7 +310,7 @@
             </div>
 
             <div class="button__wrap">
-                <button class="button__sign-up">ЗАПИСАТИСЯ<br> НА ДІАГНОСТИКУ</button>
+                <button class="button__sign-up btn-modal">ЗАПИСАТИСЯ<br> НА ДІАГНОСТИКУ</button>
             </div>
         </div>
     </section>
@@ -374,8 +374,35 @@
             <div class="modal__window-bg">
                 <div class="modal__close"></div>
 
-                <div class="modal__feedback"></div>
-                <div class="modal__thanks">
+                <div class="modal__feedback hidden">
+                    <span class="consult-form__title">Здорові ніжки – ваша найкраща інвестиція</span>
+
+                    <form class="form__container">
+                        <div class="form__select">
+                            <select class="form__select-city">
+                                <option value="" disabled selected>Оберіть місто</option>
+                                <option value="Київ">Київ</option>
+                                <option value="Дніпро">Дніпро</option>
+                                <option value="Вінниця">Вінниця</option>
+                                <option value="Одеса">Одеса</option>
+                            </select>
+                        </div>
+
+                        <div class="form__input">
+                            <input type="text" class="form__input-name" placeholder="Введіть Ваше ім’я">
+                        </div>
+
+                        <div class="form__input">
+                            <input type="text" class="form__input-phone" placeholder="Введіть номер телефону">
+                        </div>
+
+                        <button id="modalBtn" class="button__sign-up">
+                            ЗАПИСАТИСЯ ЗАРАЗ<br> <span>на безкоштовну діагностику</span>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="modal__thanks hidden">
                     <div class="modal__thanks-img">
                         <img src="./assets/images/icon-check.svg" alt="Check">
                     </div>

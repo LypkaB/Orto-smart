@@ -84,7 +84,6 @@ document.addEventListener('DOMContentLoaded', () => {
             requestForm(fieldCity, fieldName, fieldsPhone);
         }
     }
-    const mainBody = document.body;
 
     const requestForm = (city, name, phone) => {
         const data = {
@@ -103,11 +102,18 @@ document.addEventListener('DOMContentLoaded', () => {
             mode: 'no-cors'
         })
         .then(() => {
-            mainBody.classList.add('overflow');
-            modalWindow.classList.remove('hidden');
-            document.getElementById('formConsultBtn').closest('.form__container').reset();
+            if (!modalWindow.classList.contains('hidden')) {
+                modalFeedback.classList.add('hidden');
+                modalThanks.classList.remove('hidden');
+                document.getElementById('modalBtn').closest('.form__container').reset();
+            } else {
+                mainBody.classList.add('overflow');
+                modalWindow.classList.remove('hidden');
+                modalThanks.classList.remove('hidden');
+                document.getElementById('formConsultBtn').closest('.form__container').reset();
+            }
         })
-        .catch(error => {
+        .catch(() => {
             alert('Сталася помилка. Спробуйте ще раз');
         });
     }
@@ -120,12 +126,26 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     submitForm(document.getElementById('formConsultBtn'));
+    submitForm(document.getElementById('modalBtn'));
 
     /* Modal */
+    const mainBody = document.body;
     const modalWindow = document.querySelector('.modal__window');
+    const modalFeedback = document.querySelector('.modal__feedback');
+    const modalThanks = document.querySelector('.modal__thanks');
 
     document.querySelector('.modal__close').addEventListener('click', () => {
         mainBody.classList.remove('overflow');
         modalWindow.classList.add('hidden');
+        modalFeedback.classList.add('hidden');
+        modalThanks.classList.add('hidden');
+    });
+
+    document.querySelectorAll('.btn-modal').forEach(btn => {
+        btn.addEventListener('click', () => {
+            mainBody.classList.add('overflow');
+            modalWindow.classList.remove('hidden');
+            modalFeedback.classList.remove('hidden');
+        });
     });
 });

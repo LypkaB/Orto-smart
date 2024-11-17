@@ -555,7 +555,9 @@ button {
         text-align: center;
 
         select, input {
-            text-align: center;
+            text-align-last: center;
+            -moz-text-align-last: center;
+            -webkit-text-align-last: center;
         }
     }
 }
@@ -585,6 +587,7 @@ button {
             font-size: 14px;
             font-weight: 500;
             color: #888;
+            background: transparent;
 
             &::-ms-expand {
                 display: none;

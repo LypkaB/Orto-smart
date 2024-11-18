@@ -1,10 +1,10 @@
 @mixin font-face($name, $src, $weight) {
     @font-face {
         font-family: $name;
-        src: url('/assets/font/' + $src + '.eot');
-        src: url('/assets/font/' + $src + '.eot?#iefix') format('embedded-opentype'),
-             url('/assets/font/' + $src + '.ttf') format('truetype'),
-             url('/assets/font/' + $src + '.woff') format('woff');
+        src: url('../../assets/font/' + $src + '.eot');
+        src: url('../../assets/font/' + $src + '.eot?#iefix') format('embedded-opentype'),
+             url('../../assets/font/' + $src + '.ttf') format('truetype'),
+             url('../../assets/font/' + $src + '.woff') format('woff');
         font-weight: $weight;
         font-style: normal;
         font-display: swap;

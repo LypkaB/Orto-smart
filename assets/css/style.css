@@ -231,8 +231,11 @@ button {
   margin-bottom: 20px;
 }
 
+.reasons {
+  margin-bottom: 30px;
+}
+
 .reasons .container {
-  padding-bottom: 64px;
   position: relative;
 }
 
@@ -246,8 +249,8 @@ button {
 }
 
 .reasons__carousel {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
   padding-bottom: 62px;
 }
 
@@ -327,6 +330,75 @@ button {
 
 .reasons .swiper-button-disabled {
   color: #DDE3E9;
+}
+
+.use {
+  margin-bottom: 40px;
+}
+
+.use .container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.use__title {
+  display: block;
+  font-size: 21px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.use__wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.use__img {
+  margin-bottom: 12px;
+}
+
+.use__img img {
+  width: 100%;
+}
+
+.use__arrow {
+  position: absolute;
+  left: 60%;
+  bottom: -30px;
+}
+
+.use__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-column-gap: 30px;
+  -moz-column-gap: 30px;
+  column-gap: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.use__item + div {
+  margin-top: 20px;
+}
+
+.use__text {
+  max-width: 230px;
+  padding: 12px 6px;
+  background-color: #EDF8FF;
+  border-radius: 10px;
+  border: 2px solid #4FA3FF;
+  font-size: 14px;
+  font-weight: 600;
+  color: #414141;
+  text-align: center;
 }
 
 .benefits {

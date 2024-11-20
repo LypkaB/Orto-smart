@@ -132,16 +132,16 @@ button {
         flex-direction: column;
         position: absolute;
         left: 50%;
-        bottom: 33px;
+        bottom: 50px;
         transform: translateX(-50%);
     }
 
     &__text {
-        margin-bottom: 9px;
+        margin-bottom: 15px;
         padding-left: 30px;
         padding-right: 30px;
-        font-size: 32px;
-        font-weight: 700;
+        font-size: 22px;
+        font-weight: 600;
         line-height: 1;
         color: #E3272D;
         text-align: center;
@@ -149,11 +149,11 @@ button {
 
     &__subtext {
         margin-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 14px;
         font-weight: 500;
-        line-height: 1.1;
+        line-height: 1.3;
         color: #004D68;
         text-align: center;
     }
@@ -723,6 +723,36 @@ button {
         top: 0;
         left: 50%;
         transform: translateX(-50%);
+
+        .text-block {
+            position: absolute;
+            padding: 8px;
+            background-color: rgba(186, 235, 152, 0.5);
+            border-radius: 8px;
+            backdrop-filter: blur(1.5px);
+
+            span {
+                display: inline-block;
+                font-size: 10px;
+                font-weight: 500;
+                color: #292929;
+                white-space: nowrap;
+            }
+
+            &.block {
+                &-first {
+                    top: 70px;
+                    left: 15px;
+                }
+
+                &-second {
+                    padding-left: 16px;
+                    padding-right: 16px;
+                    top: 160px;
+                    left: -155px;
+                }
+            }
+        }
     }
 
     &-circle {

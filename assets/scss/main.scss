@@ -200,15 +200,21 @@ button {
     }
 
     .swiper {
+        &-wrapper {
+            display: flex;
+            align-items: stretch;
+        }
+
         &-slide {
-            width: 280px;
-            padding-bottom: 36px;
+            width: 235px;
+            height: auto;
+            padding-bottom: 10px;
             background-color: white;
             border-radius: 12px;
             box-shadow: 0 2.92px 29.17px 0 rgba(48, 48, 48, 0.15);
 
             &__image {
-                margin-bottom: 42px;
+                margin-bottom: 20px;
 
                 img {
                     border-radius: 8px;
@@ -229,9 +235,8 @@ button {
                 &::before {
                     content: "";
                     position: absolute;
+                    top: 8px;
                     left: -15px;
-                    top: 50%;
-                    transform: translateY(-50%);
                     width: 4px;
                     height: 4px;
                     background-color: black;

@@ -456,8 +456,8 @@ button {
 
 .recommendations__title {
   display: block;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 75px;
+  padding-right: 75px;
   font-size: 26px;
   font-weight: 600;
   color: #555;
@@ -466,8 +466,20 @@ button {
 }
 
 .recommendations__wrap {
-  padding-left: 44px;
-  padding-right: 34px;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 25px;
+  -moz-column-gap: 25px;
+  column-gap: 25px;
+  row-gap: 18px;
 }
 
 .recommendations__item {
@@ -482,11 +494,23 @@ button {
   column-gap: 16px;
 }
 
-.recommendations__item + div {
-  margin-top: 20px;
+.recommendations__item:nth-child(odd) {
+  -ms-flex-preferred-size: 40%;
+  flex-basis: 40%;
+}
+
+.recommendations__item:nth-child(even) {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.recommendations__icon {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .recommendations__text {
+  font-size: 14px;
   font-weight: 600;
   color: #555;
 }

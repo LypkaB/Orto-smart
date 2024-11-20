@@ -394,8 +394,8 @@ button {
 
     &__title {
         display: block;
-        padding-left: 60px;
-        padding-right: 60px;
+        padding-left: 75px;
+        padding-right: 75px;
         font-size: 26px;
         font-weight: 600;
         color: #555;
@@ -404,8 +404,13 @@ button {
     }
 
     &__wrap {
-        padding-left: 44px;
-        padding-right: 34px;
+        padding-left: 40px;
+        padding-right: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        column-gap: 25px;
+        row-gap: 18px;
     }
 
     &__item {
@@ -413,12 +418,21 @@ button {
         align-items: center;
         column-gap: 16px;
 
-        + div {
-            margin-top: 20px;
+        &:nth-child(odd) {
+            flex-basis: 40%;
+        }
+
+        &:nth-child(even) {
+            flex-basis: 50%;
         }
     }
 
+    &__icon {
+        flex-shrink: 0;
+    }
+
     &__text {
+        font-size: 14px;
         font-weight: 600;
         color: #555;
     }

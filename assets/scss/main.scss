@@ -444,7 +444,18 @@ button {
     .container {
         padding-top: 45px;
         padding-bottom: 45px;
-        background-color: #EDF8FF;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #EDF8FF;
+            z-index: -2;
+        }
     }
 
     &__title {
@@ -472,23 +483,25 @@ button {
         background-color: white;
         border-radius: 12px;
         text-align: center;
-        /*position: relative;
-        z-index: 9;
+        text-decoration: none;
 
-        &::after {
-            content: '';
-            position: absolute;
-            border-radius: 12px;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            animation: pulse-background 2s infinite;
-            animation-delay: 2s;
-            z-index: 1;
-        }*/
+        &.item_anim {
+            position: relative;
 
-        + div {
+            &::after {
+                content: '';
+                position: absolute;
+                border-radius: 12px;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                animation: pulse-background 1.2s infinite;
+                z-index: -1;
+            }
+        }
+
+        + * {
             margin-top: 47px;
         }
     }
@@ -1095,21 +1108,21 @@ button {
     }
 }
 
-/*@keyframes pulse-background {
+@keyframes pulse-background {
     0% {
-        background-color: rgba(226, 246, 255, 0.7);
+        background-color: rgba(202, 240, 255, 0.7);
         transform: scale(1);
     }
     50% {
-        background-color: rgba(226, 246, 255, 0.7);
-        transform: scale(1.1);
+        background-color: rgba(202, 240, 255, 0.7);
+        transform: scale(1.15);
     }
     75% {
-        background-color: rgba(226, 246, 255, 0.7);
+        background-color: rgba(202, 240, 255, 0.7);
         transform: scale(1);
     }
     100% {
-        background-color: rgba(226, 246, 255, 0.7);
+        background-color: rgba(202, 240, 255, 0.7);
         transform: scale(1);
     }
-}*/
+}

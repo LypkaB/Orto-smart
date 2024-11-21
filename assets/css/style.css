@@ -522,7 +522,18 @@ button {
 .steps .container {
   padding-top: 45px;
   padding-bottom: 45px;
+  position: relative;
+}
+
+.steps .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #EDF8FF;
+  z-index: -2;
 }
 
 .steps__title {
@@ -559,24 +570,27 @@ button {
   background-color: white;
   border-radius: 12px;
   text-align: center;
-  /*position: relative;
-  z-index: 9;
-
-  &::after {
-      content: '';
-      position: absolute;
-      border-radius: 12px;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      animation: pulse-background 2s infinite;
-      animation-delay: 2s;
-      z-index: 1;
-  }*/
+  text-decoration: none;
 }
 
-.steps__item + div {
+.steps__item.item_anim {
+  position: relative;
+}
+
+.steps__item.item_anim::after {
+  content: "";
+  position: absolute;
+  border-radius: 12px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-animation: pulse-background 1.2s infinite;
+  animation: pulse-background 1.2s infinite;
+  z-index: -1;
+}
+
+.steps__item + * {
   margin-top: 47px;
 }
 
@@ -1244,21 +1258,54 @@ button {
   }
 }
 
-/*@keyframes pulse-background {
-    0% {
-        background-color: rgba(226, 246, 255, 0.7);
-        transform: scale(1);
-    }
-    50% {
-        background-color: rgba(226, 246, 255, 0.7);
-        transform: scale(1.1);
-    }
-    75% {
-        background-color: rgba(226, 246, 255, 0.7);
-        transform: scale(1);
-    }
-    100% {
-        background-color: rgba(226, 246, 255, 0.7);
-        transform: scale(1);
-    }
-}*/
+@-webkit-keyframes pulse-background {
+  0% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+
+  75% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes pulse-background {
+  0% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  50% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1.15);
+    transform: scale(1.15);
+  }
+
+  75% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    background-color: rgba(202, 240, 255, 0.7);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

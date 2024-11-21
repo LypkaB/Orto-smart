@@ -176,6 +176,10 @@ button {
         text-align: center;
         margin-bottom: 20px;
     }
+
+    #opportunitiesVideoIframe {
+        border-radius: 8px;
+    }
 }
 
 .reasons {
@@ -316,13 +320,16 @@ button {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        column-gap: 30px;
         padding-left: 15px;
-        padding-right: 15px;
+        padding-right: 25px;
 
         + div {
             margin-top: 20px;
         }
+    }
+
+    &__icon {
+        margin-left: 10px;
     }
 
     &__text {
@@ -350,7 +357,7 @@ button {
     &__title {
         display: block;
         font-size: 26px;
-        font-weight: 700;
+        font-weight: 600;
         color: #555;
         text-align: center;
         letter-spacing: 0.7px;
@@ -411,6 +418,7 @@ button {
         align-items: center;
         column-gap: 25px;
         row-gap: 18px;
+        margin-bottom: 40px;
     }
 
     &__item {
@@ -706,9 +714,10 @@ button {
     }
 
     &__text {
-        margin-top: -86px;
-        margin-left: 8px;
-        margin-right: 17px;
+        max-width: 285px;
+        margin-top: -100px;
+        margin-left: auto;
+        margin-right: auto;
         padding: 24px 22px 26px 20px;
         border-radius: 8px;
         background-image: url("../../assets/images/bg-1.svg");
